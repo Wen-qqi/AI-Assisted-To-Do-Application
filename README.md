@@ -1,17 +1,17 @@
 # AI-Assisted-To-Do-Application  
 
-<h2>Project Overview</h2>  
+## Project Overview
 This project is an AI powered task management application built in Python. It allows users to create, manage, and organize tasks through a GUI, while also using an AI model (Google Gemini) to prioritize tasks, generate schedules, and provide productivity insights.  
-<h2>Layout of the Code</h2>
+## Layout of the Code
 project/ <br>
 |<br>
 ├── task.py<br> 
 ├── tasks.csv </br>
 
-<h2>What Each File/Part Does</h2>  
-<h3>1. task.py (Main File)</h3>  
+## What Each File/Part Does 
+### 1. task.py (Main File)
 This file contains the entire application.
-<h4>a. Imports and Configuration</h4>  
+#### a. Imports and Configuration  
 <ul>
   <li>Required Imports and Libraries:</li>
   <ul>
@@ -23,7 +23,8 @@ This file contains the entire application.
   <li>Set up the Google Gemini AI model (gemini-2.5-flash)</li>
   <li>Initializes the AI client</li>
 </ul>
-<h4>b. Task class (data model)</h4>
+
+#### b. Task class (data model)
 This class represents a single task in the system.<br>
 <br>
 Each task stores:<br>
