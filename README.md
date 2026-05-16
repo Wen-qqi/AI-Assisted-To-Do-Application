@@ -58,19 +58,15 @@ project/ <br>
 ### 1. task.py (Main File)
 This file contains the entire application.
 #### a. Imports and Configuration  
-<ul>
-  <li>Required Imports and Libraries:</li>
-  <ul>
-    <li>tkinter -> GUI Interface</li>
-    <li>csv, json, os -> Data Storage and Handeling</li>
-    <li>datetime, calendar -> date and calendar features</li>
-    <li>google.genai -> AI Integration</li>
-  </ul>
-  <li>Set up the Google Gemini AI model (gemini-2.5-flash)</li>
-  <li>Initializes the AI client</li>
-</ul>  
+- Imports with required libraries such as:
+  * tkinter -> GUI Interface
+  * csv, json, os -> Data Storage and Handeling
+  * datetime, calendar -> Date and Calendar Features
+  * google.genai -> AI Integration
+- Sets up the Google Gemini AI model (gemini-2.5-flash)
+- Initializes the API Client
 
-#### b. Task class (data model)
+#### b. Task class
 This class represents a single task in the system.<br>
 <br>
 Each task stores:<br>
@@ -81,6 +77,37 @@ Each task stores:<br>
 - priority
 - suggested time
 - completed tasks
+
+#### c. TaskManager class
+This class contains the backend logic<br/>
+
+Responsibilities:<br>
+- Load tasks from tasks.csv
+- Save tasks back to the file
+- Add new tasks
+- Delete tasks
+- Mark tasks as completed
+- Communicate with the AI system
+
+#### d. AI Features (inside TaskManager class)
+**AI Prioritization**<br>
+- Sends task data to Gemini
+- Receives priority ranking (1-10)
+- Updates each task accordingly
+
+**AI Scheduling**<br>
+- Send tasks to Gemini
+- Receives suggested time blocks (morning/afternoon/evening)
+- Assigns schedule to tasks
+
+**AI Insights**<br>
+- Sends task data to Gemini
+- Gemini analyzes all tasks
+- Returns:
+  * workload level
+  * urgent tasks
+  * overdue tasks
+  * productivity advice
 
 
 
