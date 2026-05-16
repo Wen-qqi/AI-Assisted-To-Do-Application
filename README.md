@@ -103,14 +103,51 @@ Responsibilities:<br>
 **AI Insights**<br>
 - Sends task data to Gemini
 - Gemini analyzes all tasks
+- Opens a separate window
 - Returns:
   * workload level
   * urgent tasks
   * overdue tasks
   * productivity advice
 
+#### e. GUI Features (Tkinter Interface)
+This section of code handles all of the user interactions with the interface<br/>
 
+User interactions and UI:<br>
+- Task input fields (description, location, due date, category)
+- Buttons:
+  * Add
+  * Delete
+  * Mark Completed
+  * AI Prioritize
+  * AI Schedule
+  * AI Insights
+  * Calendar View
+  * Clear
+- Table view using Treeview to display task
+- Color-coding based on priority
 
+#### f. Calendar View Module
+- Opens a separate window
+- Displays monthly calendar
+- Maps tasks to due dates
+- Show tasks to due dates
+- Show tasks inside each day cell
+- Uses color to represent priority levels
+
+### 2. tasks.csv (Data Storage)
+This file stores all tasks continuously<br/>
+
+Each row contains:<br>
+- description
+- location
+- due date
+- category
+- priority
+- suggested time
+- completion status <br/>
+
+It allows the application to keep user data after closing and reload tasks when the user reopens the application
 
 
 
