@@ -8,7 +8,7 @@ This project is an AI powered task management application built in Python. It al
 | Name             | GitHub Handle | Email                                                             |
 |------------------|---------------|--------------------------------------------------------------------------|
 | Wen Fan    | @Wen-qqi | wqfan05@gmail.com            |
-| Giovanna Baez   | @     | @gmail.com  |
+| Giovanna Baez   |      |   |
 ---
 ## 🖥️ Setup and Installation
 **1. Create Python Virtual Environment**<br>
