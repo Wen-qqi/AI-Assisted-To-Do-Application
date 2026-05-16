@@ -10,6 +10,33 @@ This project is an AI powered task management application built in Python. It al
 | Wen Fan    | @Wen-qqi | wqfan05@gmail.com            |
 | Giovanna Baez   | @     | @gmail.com  |
 ---
+## 🖥️ Setup and Installation
+**1. Create Python Virtual Environment**<br>
+```
+python3 -m venv/env
+```
+- Some users may have to use python instead of python3<br/>
+
+**2. Activate Virutal Environment**<br/>
+
+For bash/macOS users:
+```
+source env/bin/activate
+```
+
+**3. Install Google Gemini Library**
+```
+pip install google-genai
+```
+
+**4. Input your API Key**
+- Open **task.py** and go to line 17 for the code:
+```
+client = genai.Client(api_key="API_KEY")
+```
+- Replace **API_KEY** with your Google Gemini API Key
+- If you don't have an API Key, create a key in [Google AI Studio](https://aistudio.google.com/api-keys)
+
 
 ## 🧠 Layout of the Code
 project/ <br>
