@@ -37,6 +37,16 @@ client = genai.Client(api_key="API_KEY")
 - Replace **API_KEY** with your Google Gemini API Key
 - If you don't have an API Key, create a key in [Google AI Studio](https://aistudio.google.com/api-keys)
 
+## Running the file inside the Virtual Environment
+**1. Type this command in the terminal to run the program:**
+```
+./task.py
+```
+
+**2. Deactivating the Virtual Environment**
+```
+deactivate
+```
 
 ## 🧠 Layout of the Code
 project/ <br>
